@@ -5,7 +5,9 @@ const signupRoute = require("../routes/signup")
 const loginRoute = require('../routes/login')
 const getUserRoute = require('../routes/getUser')
 const calculateRoute  = require('../routes/calculate')
+const cors = require('cors')
 const app = express()
+app.use(cors())
 
 mongoose.set("strictQuery", false);
 
