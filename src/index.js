@@ -7,6 +7,8 @@ const getUserRoute = require('../routes/getUser')
 const calculateRoute  = require('../routes/calculate')
 const app = express()
 
+mongoose.set("strictQuery", false);
+
 app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 
